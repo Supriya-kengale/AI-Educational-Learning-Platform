@@ -4,7 +4,7 @@ import json
 from flask import jsonify
 
 # Gemini API configuration
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyCdn9YZl1TJqvrtqzG5j1RMepVk-fMtlDU")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 # Using the most basic and widely available model
 GEMINI_URL = f"https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key={GEMINI_API_KEY}"
 
